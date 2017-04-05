@@ -1,8 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This is the R code corresponding to Programming Assignment 2 of the R programming course
+## on Coursera.
 
-## Write a short comment describing this function
+## The code has two functions...
+## "makeCacheMatrix" and "cacheSolve"
 
+
+
+## "makeCacheMatrix" takes matrix as input and returns a list of four functions
+## This is where the matrix and inverse values are cached
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -19,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## "cacheSolve" returns the inverse of the matrix
+## fetches the cached value if already exists. Else, it uses the solve() function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
